@@ -7,6 +7,7 @@
 
 main {
     margin: 40px;
+    margin-top: 5px;
 }
 
 @media(max-width:1368px) {
@@ -170,9 +171,15 @@ main {
     }
 }
 
+.cabecera {
+    height: 100px;
+    margin: auto;
+    background-color: white;
+}
+
 h1 {
+    padding-top: 30px;
     text-align: center;
-    margin-top: 50px;
 }
 
 button {
@@ -487,4 +494,79 @@ button span {
 
 .raro:hover::after {
     top: 0;
+}
+
+.oro:hover {
+    background-color: gold;
+    color: darkgoldenrod;
+    text-shadow: 0px 0 10px rgb(192, 169, 38);
+    box-shadow: 0px 0 50px rgb(255, 224, 49);
+}
+
+.musica::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(186, 214, 59);
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 400px;
+    transition: .3s ease-in-out all;
+}
+
+.musica:hover::after {
+    top: 0;
+    left: 0;
+}
+
+.musico::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(186, 214, 59);
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    right: 400px;
+    transition: .3s ease-in-out all;
+}
+
+.musico:hover::after {
+    top: 0;
+    right: 0;
+}
+
+.amusica::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(186, 214, 59);
+    position: absolute;
+    z-index: 1;
+    bottom: 100px;
+    left: 400px;
+    transition: .3s ease-in-out all;
+}
+
+.amusica:hover::after {
+    bottom: 0;
+    left: 0;
+}
+
+.amusico::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(186, 214, 59);
+    position: absolute;
+    z-index: 1;
+    bottom: 100px;
+    right: 400px;
+    transition: .3s ease-in-out all;
+}
+
+.amusico:hover::after {
+    bottom: 0;
+    right: 0;
 }
